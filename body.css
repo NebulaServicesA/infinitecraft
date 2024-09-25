@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.crafting-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    width: 80px;
+    height: 80px;
+    background-color: #e0e0e0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.result-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.result-item {
+    width: 100px;
+    height: 100px;
+    background-color: #f5f5f5;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.elements-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.element {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.element:hover {
+    background-color: #45a049;
+}
