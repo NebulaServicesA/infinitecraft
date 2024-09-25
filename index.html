@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infinity Craft</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="game-container">
-        <h1>Infinity Craft</h1>
-        <div class="crafting-grid">
-            <div class="grid-item" draggable="true"></div>
-            <div class="grid-item" draggable="true"></div>
-            <div class="grid-item" draggable="true"></div>
-            <div class="grid-item" draggable="true"></div>
+    <div id="container">
+        <!-- Sidebar for draggable elements -->
+        <div id="sidebar">
+            <h2>Elements</h2>
+            <ul id="elements">
+                <!-- Elements will be dynamically loaded here -->
+            </ul>
         </div>
-        <div class="result-container">
-            <h2>Result:</h2>
-            <div class="result-item"></div>
+
+        <!-- Crafting area -->
+        <div id="crafting-area">
+            <h2>Crafting Area</h2>
+            <div id="drop-zone">
+                Drop elements here to combine!
+            </div>
         </div>
-        <div class="elements-container">
-            <h2>Elements:</h2>
-            <div class="element" draggable="true">Earth</div>
-            <div class="element" draggable="true">Water</div>
-            <div class="element" draggable="true">Fire</div>
-            <div class="element" draggable="true">Air</div>
+
+        <!-- Result area -->
+        <div id="result-area">
+            <h2>Result</h2>
+            <div id="result-output">
+                <!-- Results of combinations will appear here -->
+            </div>
         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
